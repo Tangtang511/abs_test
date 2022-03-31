@@ -1,0 +1,4 @@
+mode: set
+gotest/unit_test/abs.go:3.21,4.11 1 1
+gotest/unit_test/abs.go:4.11,6.3 1 1
+gotest/unit_test/abs.go:6.8,8.3 1 1

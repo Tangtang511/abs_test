@@ -1,6 +1,9 @@
 package main
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestAbs(t *testing.T) {
 	type args struct {
@@ -35,4 +38,19 @@ func TestAbs(t *testing.T) {
 			}
 		})
 	}
+}
+func BenchmarkAbs(b *testing.B) {
+	for i := 0; i < b.N; i++ {
+		Abs(6)
+	}
+}
+
+func ExampleAbs() {
+	fmt.Println(Abs(6))
+	fmt.Println(Abs(0))
+	fmt.Println(Abs(-2))
+	// Output:
+	// 6
+	// 0
+	// 2
 }
